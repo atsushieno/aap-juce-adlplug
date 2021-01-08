@@ -390,18 +390,20 @@
         <CONFIGURATION isDebug="0" name="Release"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_core" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="thirdparty/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="thirdparty/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_gui_extra" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_gui_basics" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_graphics" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_events" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_data_structures" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_core" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_audio_utils" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_audio_processors" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_audio_plugin_client" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_audio_formats" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_audio_devices" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juce_audio_basics" path="../../external/JUCE/modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="../../aap-juce/modules" />
       </MODULEPATHS>
     </LINUX_MAKE>
     <ANDROIDSTUDIO targetFolder="Builds/Android" androidMinimumSDK="29" androidTargetSDK="29"
