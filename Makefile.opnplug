@@ -20,5 +20,5 @@ PATCH_DEPTH=1
 # SKIP_METADATA_GENERATOR=1
 
 
-include aap-juce/Makefile.common
+include $(AAP_JUCE_DIR)/Makefile.common
 
