@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugins>
+  <plugin name="OPNplug" category="Synth" author="Jean Pierre Cimalando"
+          manufacturer="" unique-id="juceaap:4f504e4d" library="libjuce_jni.so"
+          entrypoint="GetJuceAAPFactory" assets="">
+    <ports>
+      <port name="Master volume" direction="input" maximum="10.0" content="other"/>
+      <port name="Emulator" direction="input" default="0.0" maximum="5.0"
+            content="other"/>
+      <port name="Chip count" direction="input" minimum="1.0" maximum="100.0"
+            content="other"/>
+      <port name="Chip type" direction="input" default="0.0" maximum="1.0"
+            content="other"/>
+      <port name="[Part 1] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 1] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 1] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 1] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 2] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 2] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 2] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 2] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 3] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 3] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 3] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 3] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 4] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 4] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 4] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 4] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 5] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 5] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 5] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 5] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 6] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 6] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 6] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 6] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 7] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 7] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 7] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 7] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 8] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 8] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 8] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 8] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 9] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 9] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 9] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 9] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 10] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 10] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 10] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 10] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 11] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 11] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 11] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 11] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 12] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 12] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 12] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 12] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 13] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 13] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 13] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 13] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 14] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 14] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 14] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 14] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 15] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 15] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 15] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 15] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 16] Operator 1 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 16] Operator 3 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 16] Operator 2 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="[Part 16] Operator 4 Level" direction="input" maximum="127.0"
+            content="other"/>
+      <port name="Volume model" direction="input" default="-nan" content="other"/>
+      <port name="LFO enable" direction="input" maximum="1.0" content="other"/>
+      <port name="LFO frequency" direction="input" maximum="7.0" content="other"/>
+      <port direction="output" content="audio" name="Left"/>
+      <port direction="output" content="audio" name="Right"/>
+      <port direction="input" content="midi" name="MIDI input"/>
+    </ports>
+  </plugin>
+</plugins>
