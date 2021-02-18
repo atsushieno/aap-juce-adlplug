@@ -8,6 +8,6 @@
 	path = external/android-audio-plugin-framework
 	url = https://github.com/atsushieno/android-audio-plugin-framework.git
 [submodule "aap-juce"]
-	path = aap-juce
+	path = external/aap-juce
 	url = https://github.com/atsushieno/aap-juce.git
 	branch = new-repo-structure
