@@ -140,7 +140,7 @@
             content="other"/>
       <port name="[Part 16] Operator 4 Level" direction="input" pp:maximum="127.0"
             content="other"/>
-      <port name="Volume model" direction="input" pp:default="-nan" content="other"/>
+      <port name="Volume model" direction="input" pp:minimum="0.0" pp:maximum="1.0" content="other"/>
       <port name="LFO enable" direction="input" pp:maximum="1.0" content="other"/>
       <port name="LFO frequency" direction="input" pp:maximum="7.0" content="other"/>
       <port direction="output" content="audio" name="Left"/>
