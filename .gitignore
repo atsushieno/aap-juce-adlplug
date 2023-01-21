@@ -1,2 +1,7 @@
-apps/OPNplug
+local.properties
+.idea
+.cxx
+build
+.gradle
+release-builds
 

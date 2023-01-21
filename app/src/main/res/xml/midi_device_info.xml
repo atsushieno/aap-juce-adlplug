@@ -1,0 +1,6 @@
+<devices>
+    <device name="OPNplug" manufacturer="androidaudioplugin.org" product="ADLplug">
+        <input-port name="input" />
+    </device>
+</devices>
+

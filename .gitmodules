@@ -1,13 +1,13 @@
 [submodule "external/JUCE"]
 	path = external/JUCE
 	url = https://github.com/juce-framework/JUCE.git
-[submodule "external/ADLplug"]
-	path = external/ADLplug
-	url = https://github.com/atsushieno/ADLplug.git
 [submodule "external/android-audio-plugin-framework"]
-	path = external/android-audio-plugin-framework
+	path = external/aap-core
 	url = https://github.com/atsushieno/android-audio-plugin-framework.git
 [submodule "aap-juce"]
 	path = external/aap-juce
 	url = https://github.com/atsushieno/aap-juce.git
 	branch = new-repo-structure
+[submodule "ADLplug"]
+	path = external/ADLplug
+	url = https://github.com/jpcima/ADLplug.git
