@@ -1,9 +1,9 @@
 [submodule "external/JUCE"]
 	path = external/JUCE
 	url = https://github.com/juce-framework/JUCE.git
-[submodule "external/android-audio-plugin-framework"]
+[submodule "external/aap-core"]
 	path = external/aap-core
-	url = https://github.com/atsushieno/android-audio-plugin-framework.git
+	url = https://github.com/atsushieno/aap-core.git
 [submodule "aap-juce"]
 	path = external/aap-juce
 	url = https://github.com/atsushieno/aap-juce.git
