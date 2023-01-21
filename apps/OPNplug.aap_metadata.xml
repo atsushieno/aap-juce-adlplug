@@ -1,151 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugins xmlns="urn:org.androidaudioplugin.core" xmlns:pp="urn:org.androidaudioplugin.port">
-  <plugin name="OPNplug" category="Synth" author="Jean Pierre Cimalando"
+<plugins xmlns="urn:org.androidaudioplugin.core">
+  <plugin name="OPNplug" category="Instrument" author="Jean Pierre Cimalando"
           manufacturer="" unique-id="juceaap:4f504e4d" library="libjuce_jni.so"
           entrypoint="GetJuceAAPFactory" assets="">
+    <extensions>
+      <extension uri="urn://androidaudioplugin.org/extensions/presets/v1"/>
+    </extensions>
+    <parameters xmlns="urn://androidaudioplugin.org/extensions/parameters">
+      <parameter id="0" name="Master volume" direction="input" minimum="0.0" maximum="10.0"
+                 default="0.009999999776482582" content="other"/>
+      <parameter id="1" name="Emulator" direction="input" default="0.0" minimum="0.0"
+                 maximum="5.0" content="other"/>
+      <parameter id="2" name="Chip count" direction="input" minimum="1.0" maximum="100.0"
+                 default="0.0" content="other"/>
+      <parameter id="3" name="Chip type" direction="input" default="0.0" minimum="0.0"
+                 maximum="1.0" content="other"/>
+      <parameter id="4" name="[Part 1] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="5" name="[Part 1] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="6" name="[Part 1] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="7" name="[Part 1] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="8" name="[Part 2] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="9" name="[Part 2] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="10" name="[Part 2] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="11" name="[Part 2] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="12" name="[Part 3] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="13" name="[Part 3] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="14" name="[Part 3] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="15" name="[Part 3] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="16" name="[Part 4] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="17" name="[Part 4] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="18" name="[Part 4] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="19" name="[Part 4] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="20" name="[Part 5] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="21" name="[Part 5] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="22" name="[Part 5] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="23" name="[Part 5] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="24" name="[Part 6] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="25" name="[Part 6] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="26" name="[Part 6] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="27" name="[Part 6] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="28" name="[Part 7] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="29" name="[Part 7] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="30" name="[Part 7] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="31" name="[Part 7] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="32" name="[Part 8] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="33" name="[Part 8] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="34" name="[Part 8] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="35" name="[Part 8] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="36" name="[Part 9] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="37" name="[Part 9] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="38" name="[Part 9] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="39" name="[Part 9] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="40" name="[Part 10] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="41" name="[Part 10] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="42" name="[Part 10] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="43" name="[Part 10] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="44" name="[Part 11] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="45" name="[Part 11] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="46" name="[Part 11] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="47" name="[Part 11] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="48" name="[Part 12] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="49" name="[Part 12] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="50" name="[Part 12] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="51" name="[Part 12] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="52" name="[Part 13] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="53" name="[Part 13] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="54" name="[Part 13] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="55" name="[Part 13] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="56" name="[Part 14] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="57" name="[Part 14] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="58" name="[Part 14] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="59" name="[Part 14] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="60" name="[Part 15] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="61" name="[Part 15] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="62" name="[Part 15] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="63" name="[Part 15] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="64" name="[Part 16] Operator 1 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005456011276692152" content="other"/>
+      <parameter id="65" name="[Part 16] Operator 3 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.005642011296004057" content="other"/>
+      <parameter id="66" name="[Part 16] Operator 2 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007626015227288008" content="other"/>
+      <parameter id="67" name="[Part 16] Operator 4 Level" direction="input" minimum="0.0"
+                 maximum="127.0" default="0.007750015705823898" content="other"/>
+      <parameter id="68" name="Volume model" direction="input" default="-nan"
+                 minimum="0.0" maximum="0.0" content="other"/>
+      <parameter id="69" name="LFO enable" direction="input" minimum="0.0" maximum="1.0"
+                 default="1.0" content="other"/>
+      <parameter id="70" name="LFO frequency" direction="input" minimum="0.0"
+                 maximum="7.0" default="0.02040816470980644" content="other"/>
+    </parameters>
     <ports>
-      <port name="Master volume" direction="input" pp:maximum="10.0" content="other"/>
-      <port name="Emulator" direction="input" pp:default="0.0" pp:maximum="5.0"
-            content="other"/>
-      <port name="Chip count" direction="input" pp:minimum="1.0" pp:maximum="100.0"
-            content="other"/>
-      <port name="Chip type" direction="input" pp:default="0.0" pp:maximum="1.0"
-            content="other"/>
-      <port name="[Part 1] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 1] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 1] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 1] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 2] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 2] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 2] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 2] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 3] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 3] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 3] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 3] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 4] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 4] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 4] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 4] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 5] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 5] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 5] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 5] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 6] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 6] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 6] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 6] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 7] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 7] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 7] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 7] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 8] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 8] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 8] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 8] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 9] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 9] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 9] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 9] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 10] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 10] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 10] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 10] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 11] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 11] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 11] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 11] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 12] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 12] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 12] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 12] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 13] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 13] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 13] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 13] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 14] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 14] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 14] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 14] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 15] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 15] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 15] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 15] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 16] Operator 1 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 16] Operator 3 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 16] Operator 2 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="[Part 16] Operator 4 Level" direction="input" pp:maximum="127.0"
-            content="other"/>
-      <port name="Volume model" direction="input" pp:minimum="0.0" pp:maximum="1.0" content="other"/>
-      <port name="LFO enable" direction="input" pp:maximum="1.0" content="other"/>
-      <port name="LFO frequency" direction="input" pp:maximum="7.0" content="other"/>
       <port direction="output" content="audio" name="Left"/>
       <port direction="output" content="audio" name="Right"/>
-      <port direction="input" content="midi" name="MIDI input"/>
+      <port direction="input" content="midi2" name="MIDI input"/>
     </ports>
   </plugin>
 </plugins>
