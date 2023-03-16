@@ -333,7 +333,7 @@
         <MODULEPATH id="juce_audio_formats" path="./juce-modules" />
         <MODULEPATH id="juce_audio_devices" path="./juce-modules" />
         <MODULEPATH id="juce_audio_basics" path="./juce-modules" />
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
       </MODULEPATHS>
     </XCODE_MAC>
     <VS2017 targetFolder="juce/Builds/VisualStudio2017">
@@ -379,7 +379,7 @@
         <MODULEPATH id="juce_audio_formats" path="./juce-modules" />
         <MODULEPATH id="juce_audio_devices" path="./juce-modules" />
         <MODULEPATH id="juce_audio_basics" path="./juce-modules" />
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
       </MODULEPATHS>
     </LINUX_MAKE>
     <!--
@@ -404,7 +404,7 @@
         <MODULEPATH id="juce_audio_formats" path="./juce-modules" />
         <MODULEPATH id="juce_audio_devices" path="./juce-modules" />
         <MODULEPATH id="juce_audio_basics" path="./juce-modules" />
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
       </MODULEPATHS>
     </LINUX_MAKE>
     -->
@@ -437,7 +437,7 @@
         <MODULEPATH id="juce_audio_formats" path="./juce-modules" />
         <MODULEPATH id="juce_audio_devices" path="./juce-modules" />
         <MODULEPATH id="juce_audio_basics" path="./juce-modules" />
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
       </MODULEPATHS>
     </ANDROIDSTUDIO>
   </EXPORTFORMATS>

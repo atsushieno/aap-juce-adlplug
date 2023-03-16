@@ -144,7 +144,7 @@
                  maximum="127.0" default="0.007626015227288008" content="other"/>
       <parameter id="67" name="[Part 16] Operator 4 Level" direction="input" minimum="0.0"
                  maximum="127.0" default="0.007750015705823898" content="other"/>
-      <parameter id="68" name="Volume model" direction="input" default="-nan"
+      <parameter id="68" name="Volume model" direction="input" default="0"
                  minimum="0.0" maximum="0.0" content="other"/>
       <parameter id="69" name="LFO enable" direction="input" minimum="0.0" maximum="1.0"
                  default="1.0" content="other"/>
